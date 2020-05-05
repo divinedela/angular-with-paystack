@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { Angular4PaystackModule } from 'angular4-paystack';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -8,7 +8,8 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    Angular4PaystackModule.forRoot('pk_test_a18f42abea034a496aee041a8db12845315af792'),
   ],
   providers: [],
   bootstrap: [AppComponent]
